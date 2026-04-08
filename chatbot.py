@@ -1,7 +1,7 @@
-import cohere
 import streamlit as st
+import cohere
 
-co = cohere.Client(st.secrets["fquAbMdkbSB9AosOpzt46no6oUglf103fqFDBQtO"])
+co = cohere.Client(st.secrets["COHERE_API_KEY"])
 
 def generate_response(user_input, history):
     
