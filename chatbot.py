@@ -1,10 +1,7 @@
 import cohere
-import os
-from dotenv import load_dotenv
+import streamlit as st
 
-load_dotenv()
-
-co = cohere.Client(os.getenv("fquAbMdkbSB9AosOpzt46no6oUglf103fqFDBQtO"))
+co = cohere.Client(st.secrets["fquAbMdkbSB9AosOpzt46no6oUglf103fqFDBQtO"])
 
 def generate_response(user_input, history):
     
